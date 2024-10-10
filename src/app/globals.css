@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-arrow {
+    font-size: 20px;
+    letter-spacing: -3px; /* Reduce spacing between the arrows */
+    color: white;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
