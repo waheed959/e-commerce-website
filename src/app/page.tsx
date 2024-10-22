@@ -11,6 +11,9 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { CiMoneyCheck1 } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { CiFacebook } from "react-icons/ci";
+import { FiYoutube } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -66,6 +69,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
+            
           </div>
 
           <div className="flex space-x-3 ">
@@ -278,13 +282,100 @@ export default function Home() {
 </div>
 
 {/*  section ends here */}
-   <footer>
-   <div className="w-full h-[542px] bg-slate-200">
 
 
-   </div>
-   </footer>
+{/* footer starts here */}
+   {/* <div id="contact" className="w-full h-[542px] bg-slate-200">
+
+    <div className="w-[1120px] h-[430px] flex justify-between items-center ml-36">
+
+    <div className="w-[352px] h-[234px] ">
+      <span className="mb-6"><img src="./flogo.png" alt="" /></span>
+      <p>43111 Hai Trieu street</p>
+      <p>District 1, HCMC</p>
+      <p>Vietnam </p>
+      <div className="flex gap-2">
+        <span> <FaInstagram size={20}/> </span>
+       <span><CiFacebook size={20}/> </span>
+       <span><FiYoutube size={21}/></span>
+      </div>
+    </div>
+    <div/>
+
+
+    <div className="w-40 h-[270px]  ">
+        <p className="font-medium text-base ">Page</p>
+        <p  >Home</p>
+        <p >Shop</p>
+        <p >Product</p>
+        <p >Articles</p>
+        <p >Contact Us</p>
+
+    </div>
+
+
+    <div className="w-[160px] h-[224px] ">
+    <p className=" font-medium text-base">Info</p>
+    <p>Shipping Policy</p>
+    <p>Return and Refund</p>
+    <p>Support</p>
+    <p>FAQs</p>
+    </div>
+
+    <div className="w-[352px] h-[182px]">
+      <p className="font-medium ">Join Newsletter</p>
+      <p>Subscribe our newsletter to get more deals, new products and promotions</p>
+
+    </div>
+
+    </div>
+   
+   </div> */}
+   
+
+ <footer>
+  <div id="contact" className="w-full min-h-[240px] bg-slate-200 flex justify-center">
+    <div className="w-[1120px] h-full flex justify-between items-start p-8">
+     
+      <div className="w-[352px] h-[234px] space-y-2">
+        <img src="./flogo.png" alt="Logo" />
+        <p>43111 Hai Trieu street</p>
+        <p>District 1, HCMC</p>
+        <p>Vietnam</p>
+        <div className="flex gap-2 mt-2">
+          <span><FaInstagram size={20} /></span>
+          <span><CiFacebook size={20} /></span>
+          <span><FiYoutube size={21} /></span>
+        </div>
+      </div>
+
+      <div className="w-[160px] h-[270px] space-y-2">
+        <p className="font-medium text-base">Page</p>
+        <p>Home</p>
+        <p>Shop</p>
+        <p>Product</p>
+        <p>Articles</p>
+        <p>Contact Us</p>
+      </div>
+
       
+      <div className="w-[160px] h-[224px] space-y-2">
+        <p className="font-medium text-base">Info</p>
+        <p>Shipping Policy</p>
+        <p>Return and Refund</p>
+        <p>Support</p>
+        <p>FAQs</p>
+      </div>
+
+      
+      <div className="w-[352px] h-[182px] space-y-2 ml-4">
+        <p className="font-medium text-base ">Join Newsletter</p>
+        <p>Subscribe to our newsletter to get more deals, new products, and promotions.</p>
+      </div>
+    </div>
+  </div>
+</footer> 
+
     </div>
   );
 }
