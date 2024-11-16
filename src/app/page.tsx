@@ -19,9 +19,9 @@ export default function Home() {
   return (
     // header starts here
 
-    <div className="">
+    <div className="max-w-screen-2xl mx-auto">
       <header>
-        <div className="bg-customBlue w-full h-8 flex justify-center items-center text-semi-bold text-white text-Space Grotesk">
+        <div className=" hidden bg-customBlue w-full h-8 md:flex justify-center items-center text-semi-bold text-white text-Space Grotesk ">
           <img className="mr-3" src="./Vector.png" alt="" />
           30% off storewide{" "}
           <span className="mt-0.5 px-0.5">
@@ -45,13 +45,13 @@ export default function Home() {
 
         {/* nav bar starts here */}
 
-        <div className=" w-full h-[60px] flex justify-around items-center ">
-          <div>
+        <div className="  bg-black md:bg-white w-full h-[60px] md:flex justify-around items-center  ">
+          <div className="">
             <img src="./logo.png" alt="logo" />
           </div>
           <div>
             <nav>
-              <ul className="flex space-x-6 items-center font-semi-bold font-medium">
+              <ul className=" hidden md:flex space-x-6 items-center font-semi-bold font-medium">
                 <li>Home</li>
                 <li>
                   <a href="#shop" className="flex items-center  ">
@@ -69,16 +69,19 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            
           </div>
 
-          <div className="flex space-x-3 ">
+          <div className=" hidden md:flex space-x-3 ">
             <HiOutlineSearch size={26} />
             <HiOutlineUserCircle size={26} />
             <div className="flex">
               <HiOutlineShoppingBag size={26} />
               <PiNumberCircleTwoFill className="mt-1" size={23} />
             </div>
+          </div>
+
+          <div className="md:hidden text-4xl bg-customBlue">
+            <a href="#">&#8801</a>
           </div>
         </div>
       </header>
@@ -91,7 +94,7 @@ export default function Home() {
 
       <div className=" ">
         <div className="w-full h-auto">
-          <img src="./slider-section.png" alt="pic" />
+          <img src="./slider-section.png" alt="pic" width={1500} />
         </div>
         <div className="w-full h-24">
           <div className="h-12 flex justify-center items-center ml-14 text-2xl font-bold">
@@ -161,7 +164,6 @@ export default function Home() {
           <Image src="/bs2.png" alt="" width={262} height={459} />
           <Image src="/bs3.png" alt="" width={262} height={459} />
           <Image src="/bs4.png" alt="" width={262} height={459} />
-          
         </div>
         {/* best seller part ends here */}
 
@@ -230,152 +232,128 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full space-x-2 flex justify-center mt-8">
-      <div><img src="./article.png" alt="" /></div>
-      <div><img src="./article2.png" alt="" /></div>
-      <div><img src="./article3.png" alt="" /></div>
-    </div>
+          <div>
+            <img src="./article.png" alt="" />
+          </div>
+          <div>
+            <img src="./article2.png" alt="" />
+          </div>
+          <div>
+            <img src="./article3.png" alt="" />
+          </div>
+        </div>
       </div>
 
       {/* artcle section ends here */}
 
       {/* Contact us section */}
 
-    <div className="w-full h-[450px] flex flex-col items-center justify-center">
-      <div className="w-[554px] h-[168px] flex justify-center items-center flex-col ">
-      <p className="h-4 text-slate-600 font-bold text-base">NEWSFEED</p>
-      <p className=" h-11 font-medium text-4xl">Instagram</p>
-      <p className="h-8 font-normal text-xl">Follow us on social media</p>
-      <p className="h-7 text-slate-700">@elegant_@_offical</p>
-      </div>
-
-      <div className="w-[1120px] h-[262px] ">
-        <div className="flex justify-center">
-          <img src="./instacards.png" alt="" />
+      <div className="w-full h-[450px] flex flex-col items-center justify-center">
+        <div className="w-[554px] h-[168px] flex justify-center items-center flex-col ">
+          <p className="h-4 text-slate-600 font-bold text-base">NEWSFEED</p>
+          <p className=" h-11 font-medium text-4xl">Instagram</p>
+          <p className="h-8 font-normal text-xl">Follow us on social media</p>
+          <p className="h-7 text-slate-700">@elegant_@_offical</p>
         </div>
-      </div>
-    </div>
 
-  <div className="w-full h-[252px] flex justify-center items-center">
-  <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
-    <span><LiaShippingFastSolid size={40} /></span>
-    <p className="font-medium text-xl mt-2">Free Shipping</p> {/* Added mt-2 for spacing */}
-    <p className="text-sm text-slate-700 mt-1">Order above $200</p> {/* Added mt-1 for spacing */}
-  </div>
-
-  <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
-    <span><CiMoneyCheck1 size={40} /></span>
-    <p className="font-medium text-xl mt-2">Money-back</p>
-    <p className="text-sm text-slate-700 mt-1">30 days gurrantee</p>
-  </div>
-
-  <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
-    <span><CiLock size={40} /></span>
-    <p className="font-medium text-xl mt-2">Secure Payments</p>
-    <p className="text-sm text-slate-700 mt-1">Secured by Stripe</p>
-  </div>
-
-  <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
-    <span><BsTelephone size={40} /></span>
-    <p className="font-medium text-xl mt-2">24/7 Support</p>
-    <p className="text-sm text-slate-700 mt-1">Phone and Email support</p>
-  </div>
-</div>
-
-{/*  section ends here */}
-
-
-{/* footer starts here */}
-   {/* <div id="contact" className="w-full h-[542px] bg-slate-200">
-
-    <div className="w-[1120px] h-[430px] flex justify-between items-center ml-36">
-
-    <div className="w-[352px] h-[234px] ">
-      <span className="mb-6"><img src="./flogo.png" alt="" /></span>
-      <p>43111 Hai Trieu street</p>
-      <p>District 1, HCMC</p>
-      <p>Vietnam </p>
-      <div className="flex gap-2">
-        <span> <FaInstagram size={20}/> </span>
-       <span><CiFacebook size={20}/> </span>
-       <span><FiYoutube size={21}/></span>
-      </div>
-    </div>
-    <div/>
-
-
-    <div className="w-40 h-[270px]  ">
-        <p className="font-medium text-base ">Page</p>
-        <p  >Home</p>
-        <p >Shop</p>
-        <p >Product</p>
-        <p >Articles</p>
-        <p >Contact Us</p>
-
-    </div>
-
-
-    <div className="w-[160px] h-[224px] ">
-    <p className=" font-medium text-base">Info</p>
-    <p>Shipping Policy</p>
-    <p>Return and Refund</p>
-    <p>Support</p>
-    <p>FAQs</p>
-    </div>
-
-    <div className="w-[352px] h-[182px]">
-      <p className="font-medium ">Join Newsletter</p>
-      <p>Subscribe our newsletter to get more deals, new products and promotions</p>
-
-    </div>
-
-    </div>
-   
-   </div> */}
-   
-
- <footer>
-  <div id="contact" className="w-full min-h-[240px] bg-slate-200 flex justify-center">
-    <div className="w-[1120px] h-full flex justify-between items-start p-8">
-     
-      <div className="w-[352px] h-[234px] space-y-2">
-        <img src="./flogo.png" alt="Logo" />
-        <p>43111 Hai Trieu street</p>
-        <p>District 1, HCMC</p>
-        <p>Vietnam</p>
-        <div className="flex gap-2 mt-2">
-          <span><FaInstagram size={20} /></span>
-          <span><CiFacebook size={20} /></span>
-          <span><FiYoutube size={21} /></span>
+        <div className="w-[1120px] h-[262px] ">
+          <div className="flex justify-center">
+            <img src="./instacards.png" alt="" />
+          </div>
         </div>
       </div>
 
-      <div className="w-[160px] h-[270px] space-y-2">
-        <p className="font-medium text-base">Page</p>
-        <p>Home</p>
-        <p>Shop</p>
-        <p>Product</p>
-        <p>Articles</p>
-        <p>Contact Us</p>
+      <div className="w-full h-[252px] flex justify-center items-center">
+        <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
+          <span>
+            <LiaShippingFastSolid size={40} />
+          </span>
+          <p className="font-medium text-xl mt-2">Free Shipping</p>{" "}
+          {/* Added mt-2 for spacing */}
+          <p className="text-sm text-slate-700 mt-1">Order above $200</p>{" "}
+          {/* Added mt-1 for spacing */}
+        </div>
+
+        <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
+          <span>
+            <CiMoneyCheck1 size={40} />
+          </span>
+          <p className="font-medium text-xl mt-2">Money-back</p>
+          <p className="text-sm text-slate-700 mt-1">30 days gurrantee</p>
+        </div>
+
+        <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
+          <span>
+            <CiLock size={40} />
+          </span>
+          <p className="font-medium text-xl mt-2">Secure Payments</p>
+          <p className="text-sm text-slate-700 mt-1">Secured by Stripe</p>
+        </div>
+
+        <div className="w-[262px] h-[220px] flex flex-col items-center justify-center">
+          <span>
+            <BsTelephone size={40} />
+          </span>
+          <p className="font-medium text-xl mt-2">24/7 Support</p>
+          <p className="text-sm text-slate-700 mt-1">Phone and Email support</p>
+        </div>
       </div>
 
-      
-      <div className="w-[160px] h-[224px] space-y-2">
-        <p className="font-medium text-base">Info</p>
-        <p>Shipping Policy</p>
-        <p>Return and Refund</p>
-        <p>Support</p>
-        <p>FAQs</p>
-      </div>
+      {/*  section ends here */}
 
-      
-      <div className="w-[352px] h-[182px] space-y-2 ml-4">
-        <p className="font-medium text-base ">Join Newsletter</p>
-        <p>Subscribe to our newsletter to get more deals, new products, and promotions.</p>
-      </div>
-    </div>
-  </div>
-</footer> 
+      {/* footer starts here */}
 
+      <footer>
+        <div
+          id="contact"
+          className="w-full min-h-[240px] bg-slate-200 flex justify-center"
+        >
+          <div className="w-[1120px] h-full flex justify-between items-start p-8">
+            <div className="w-[352px] h-[234px] space-y-2">
+              <img src="./flogo.png" alt="Logo" />
+              <p>43111 Hai Trieu street</p>
+              <p>District 1, HCMC</p>
+              <p>Vietnam</p>
+              <div className="flex gap-2 mt-2">
+                <span>
+                  <FaInstagram size={20} />
+                </span>
+                <span>
+                  <CiFacebook size={20} />
+                </span>
+                <span>
+                  <FiYoutube size={21} />
+                </span>
+              </div>
+            </div>
+
+            <div className="w-[160px] h-[270px] space-y-2">
+              <p className="font-medium text-base">Page</p>
+              <p>Home</p>
+              <p>Shop</p>
+              <p>Product</p>
+              <p>Articles</p>
+              <p>Contact Us</p>
+            </div>
+
+            <div className="w-[160px] h-[224px] space-y-2">
+              <p className="font-medium text-base">Info</p>
+              <p>Shipping Policy</p>
+              <p>Return and Refund</p>
+              <p>Support</p>
+              <p>FAQs</p>
+            </div>
+
+            <div className="w-[352px] h-[182px] space-y-2 ml-4">
+              <p className="font-medium text-base ">Join Newsletter</p>
+              <p>
+                Subscribe to our newsletter to get more deals, new products, and
+                promotions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
